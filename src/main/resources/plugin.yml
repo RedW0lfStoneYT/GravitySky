@@ -1,0 +1,7 @@
+name: Gravity-Sky
+version: '${project.version}'
+main: com.selena.gravitysky.gravitysky.GravitySky
+api-version: 1.18
+load: STARTUP
+authors: [ Selena, RedW0lfStone ]
+description: Minecraft but you start on one block and random blocks fall from the sky
