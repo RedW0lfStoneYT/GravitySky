@@ -82,7 +82,7 @@ public final class GravitySky extends JavaPlugin {
                 yamlConfig.set("GameMethodType", 1);
                 yamlConfig.setComment("GameMethodType", "Use 1 for best option, there is also 0 for old mechanics", CommentType.SIDE);
                 yamlConfig.set("ItemSpawnAttempts", 5);
-                yamlConfig.set("LegacyItems", false);
+                yamlConfig.set("LegacyItems", true);
 
                 yamlConfig.set("Messages.ChestSpawn", "${GREEN}A chest has spawned with items at ${X} ${Y} ${Z}");
                 yamlConfig.set("Messages.BlockSpawn", "${GREEN}A ${BLOCK} has spawned at ${X} ${Y} ${Z}");
