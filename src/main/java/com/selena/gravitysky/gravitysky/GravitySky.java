@@ -3,7 +3,6 @@ package com.selena.gravitysky.gravitysky;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.craftbukkit.v1_18_R1.legacy.CraftLegacy;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.FallingBlock;
@@ -115,8 +114,6 @@ public final class GravitySky extends JavaPlugin {
         Options.maxAttempts = yamlConfig.getInt("ItemSpawnAttempts");
         Options.legacyItems = yamlConfig.getBoolean("LegacyItems");
         Options.methodType = yamlConfig.getInt("GameMethodType");
-        // Un tested but should work maybe hopefully
-        if (Options.legacyItems) CraftLegacy.init();
         loadMaterials();
         Options.messages.put("ChestSpawn", Utils.color(yamlConfig.getString("Messages.ChestSpawn")));
         Options.messages.put("BlockSpawn", Utils.color(yamlConfig.getString("Messages.BlockSpawn")));
